@@ -12,6 +12,7 @@ header {
     padding: 1em 0;
     text-align: center;
     position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menu-icon {
@@ -22,6 +23,7 @@ header {
     top: 1em;
     left: 1em;
     color: black;
+    z-index: 1000; /* Ensure it's above other elements */
 }
 
 nav {
@@ -31,6 +33,7 @@ nav {
     top: 100%;
     left: 0;
     width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -46,14 +49,31 @@ nav a:hover {
 
 main {
     margin: 2em;
+    padding: 0 1em;
 }
 
-footer {
-    background-color: #f0c14b;
+button {
+    background-color: #f5c242;
     color: black;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e0a733;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #f5c242;
+    padding-bottom: 0.5em;
 }
