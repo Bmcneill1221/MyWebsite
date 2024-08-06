@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - Blaze McNeill's Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Post 1</h1>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="posts.html">Posts</a>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <section>
+            <h2>Title of Post 1</h2>
+            <p>Just a test.</p>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

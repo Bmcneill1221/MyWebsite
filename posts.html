@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts - Blaze McNeill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blog Posts</h1>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="posts.html">Posts</a>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        
+
+        <section>
+            <h2>Recent Posts</h2>
+            <ul id="post-list">
+                <!-- List of blog posts will be dynamically generated here -->
+                <li><a href="post1.html">Post Title 1</a> <p> post desc here </p></li>
+                <li><a href="post2.html">Post Title 2</a></li>
+                <!-- More posts... -->
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
