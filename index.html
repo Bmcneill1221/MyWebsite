@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic HTML Page</title>
+    <title>Blaze McNeill's Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,6 +16,32 @@
             color: white;
             padding: 1em 0;
             text-align: center;
+            position: relative;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+        nav {
+            display: none;
+            background-color: #333;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 200px;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #575757;
         }
         main {
             margin: 2em;
@@ -29,21 +55,99 @@
             width: 100%;
             bottom: 0;
         }
+        @media (max-width: 600px) {
+            .menu-icon {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Basic HTML Page</h1>
+        <h1>Blaze McNeill's Resume</h1>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
     </header>
 
     <main>
-        <p>This is a simple HTML page with a header, main content area, and a footer. Customize this template as needed for your project.</p>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Phone: (832) 470 - 6723</p>
+            <p>Email: <a href="mailto:Blazemcneill1221@gmail.com">Blazemcneill1221@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/blaze-mcneill">linkedin.com/in/blaze-mcneill</a></p>
+            <p>Location: Searcy, Arkansas</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p>Master in Information Systems</p>
+            <p>Bachelors of Arts in Cybersecurity</p>
+            <p>Harding University</p>
+            <p>GPA: 3.6</p>
+            <ul>
+                <li>Cryptography</li>
+                <li>Digital Computer Forensics</li>
+                <li>Data Structures</li>
+                <li>Terrorism</li>
+                <li>Emergency Management</li>
+                <li>Cyber-Security Risk Management</li>
+                <li>Digital Forensics and AI Fundamentals</li>
+                <li>Computer Architecture and Assembler Programming</li>
+                <li>SQL</li>
+                <li>Full stack development</li>
+                <li>Network Security</li>
+                <li>Web Development</li>
+                <li>Networking Systems</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p>Visual Studio, R, ProDiscover, Atopsy, Kleopatra, HxD, SQL, MASM, C++, HTML, Cryptography, Computer Forensics, Emergency Management, Network+ certified, Python, Java, PHP, CSS, Full stack web development, project management, network management, ethical hacking, Technology Training, Threat Intelligence, Incident Response, Security Audits, Cyber-security Frameworks, Machine Learning/AI, Blockchain Technology, Chat GPT, LLM AI, Grey key, Cellebrite, etc.</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <h3>Systems Analyst | Unity Health | 2024 – Current</h3>
+            <ul>
+                <li>Collaborated closely with cross-functional teams, particularly with the data team, to ensure seamless integration and operational efficiency across multiple systems.</li>
+                <li>Monitored and resolved issues with background jobs in the MEDITECH system, demonstrating strong troubleshooting skills and a proactive approach to system maintenance.</li>
+                <li>Managed printer administration for MEDITECH setups, ensuring reliable printing solutions and minimizing downtime through efficient troubleshooting and support.</li>
+                <li>Acquired expertise in maintaining and launching third-party software systems, facilitating smooth data interfaces with the MEDITECH system and providing valuable support to users, while actively contributing to software installation projects and training initiatives.</li>
+            </ul>
+
+            <h3>Computer Repair Technician | RTI | Summer 2023</h3>
+            <ul>
+                <li>Team Leadership: Demonstrated leadership capabilities by supervising and guiding a team of professionals in delivering top-notch repair services, logistics, and Inventory.</li>
+                <li>Management: Proficiently managed inventory, optimizing the supply chain and ensuring the availability of required components.</li>
+                <li>Automation Expertise: Leveraged technical prowess to automate repetitive tasks by implementing Selenium and VBA scripts, significantly reducing manual workload and errors.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Professional Profile</h2>
+            <p>Energetic university student with an upcoming Master’s degree in Science in Information Systems program (MSIS). Detail-oriented and motivated to stay on task, meets aggressive timelines, and accomplishes goals. A strong analytical and organizational student within the Cybersecurity industry.</p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 My Basic HTML Page</p>
+        <p>&copy; 2024 Blaze McNeill</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
 
 </body>
 </html>
